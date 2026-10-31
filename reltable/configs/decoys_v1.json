@@ -1,0 +1,9 @@
+{
+  "seed": 20261030,
+  "levels": [10, 50, 100, 250, 500, 1000],
+  "row_cap": 20000,
+  "jaccard_threshold": 0.5,
+  "col_sim": 0.5,
+  "rrf_k": 60,
+  "notes": "DREDGE v1 decoys (build/13). Levels are nested within a tier; a question gets every level its pool can fill (levels_available). row_cap and jaccard_threshold are the pilot's. col_sim is the token-Jaccard threshold for the answer guard's column match; rrf_k is the reciprocal-rank-fusion constant for the hard tier."
+}

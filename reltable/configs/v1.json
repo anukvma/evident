@@ -1,0 +1,20 @@
+{
+  "seed": 20261030,
+  "bird_train_db_split": {
+    "test": 34,
+    "dev": 8,
+    "train": 27
+  },
+  "test_quota": {
+    "spider_dev": 330,
+    "bird_dev": 330,
+    "bird_train": 340
+  },
+  "dev_sample": 300,
+  "min_tables_read": 1,
+  "max_gold_rows": 200,
+  "exec_timeout_s": 60,
+  "notes": "DREDGE v1, option A (strict separation). Splits are by database. test = all BIRD-dev and Spider-dev databases + 34 BIRD-train databases; dev = 8 and train = 27 BIRD-train databases. Spider-train databases are a test-only decoy pool and never a question source, so nothing a trained system sees can appear as a test decoy. The 200 pilot questions are kept inside test; test_quota counts include them. BIRD-train databases are dealt to splits stratified by table count. Steps 11-12: candidates are oversampled by `oversample`, evidence is built for all of them (build/03, build/04), and build/12 keeps the first quota of valid ones per origin in pick order; questions whose evidence exceeds max_replay_rows rows are dropped (feasibility of the sufficiency replay; the pilot maximum is 383,293).",
+  "oversample": 1.15,
+  "max_replay_rows": 500000
+}

@@ -1,0 +1,9 @@
+{
+  "seed": 20261019,
+  "n_per_source": {"bird": 100, "spider": 100},
+  "test_db_fraction": 0.5,
+  "min_tables_read": 1,
+  "max_gold_rows": 200,
+  "exec_timeout_s": 60,
+  "notes": "Pilot only: counts are feasibility targets, not a claim of statistical power. Splits are by database."
+}
