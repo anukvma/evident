@@ -1,26 +1,26 @@
-# Track only our code (reltable/) and the paper sources (rexa_acl/).
+# Track only our code (evident/) and the paper sources (evident_acl/).
 # Everything else in this folder (BIRD, Spider, MultiTableQA, MultiTabQA, TQA-Bench, reference papers, templates,
 # backups) is third-party or scratch material and is not versioned here.
 /*
 !/.gitignore
-!/reltable/
-!/rexa_acl/
+!/evident/
+!/evident_acl/
 
-# reltable: generated data, results, models and caches are rebuilt by the pipeline (see reltable/RUNBOOK.md)
-/reltable/data/
-/reltable/reports/
-/reltable/models/
-/reltable/texput.log
-/reltable/*.pdf
+# evident: generated data, results, models and caches are rebuilt by the pipeline (see evident/RUNBOOK.md)
+/evident/data/
+/evident/reports/
+/evident/models/
+/evident/texput.log
+/evident/*.pdf
 
 # paper build outputs
-/rexa_acl/*.aux
-/rexa_acl/*.log
-/rexa_acl/*.out
-/rexa_acl/*.bbl
-/rexa_acl/*.blg
-/rexa_acl/*.synctex.gz
-/rexa_acl/*.pdf
+/evident_acl/*.aux
+/evident_acl/*.log
+/evident_acl/*.out
+/evident_acl/*.bbl
+/evident_acl/*.blg
+/evident_acl/*.synctex.gz
+/evident_acl/*.pdf
 
 __pycache__/
 *.pyc
